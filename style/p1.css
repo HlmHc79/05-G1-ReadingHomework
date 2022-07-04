@@ -1,0 +1,47 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.icon {
+    width:25px;
+    padding-right: 15px;
+}
+  
+header {
+    
+    height:15vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lexend Giga', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}  
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.grid-container {
+    display: grid;
+    padding:3px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 30vh);
+  }
+
+  .grid-item {
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+ .alpha{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
