@@ -3,6 +3,11 @@
     padding:0;
 }
 
+a {
+    text-decoration: none;
+    color:black;
+}
+
 .icon {
     width:25px;
     padding-right: 15px;
@@ -38,6 +43,15 @@ main {
     font-size: 30px;
     text-align: center;
   }
+
+  .grid-item-first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+  }
+
 
   .gris {
     opacity: 0.2;

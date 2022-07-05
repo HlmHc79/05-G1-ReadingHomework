@@ -10,10 +10,10 @@ function playTitre() {
         myImgA.src = "img/aaa.png";
         document.getElementById('jentendsa').play()    
     } else if (myImgA.src.match("img/aaa.png")) {
-        myImgA.src = "img/rat.png";
-        document.getElementById('jentendsrat').play()
+        myImgA.src = "img/avion.png";
+        document.getElementById('jentendsavion').play()
 
-    } else  if (myImgA.src.match("img/rat.png")){
+    } else  if (myImgA.src.match("img/avion.png")){
         myImgA.src = "img/a.png";
         document.getElementById('jentendsa').play()
     }
@@ -23,11 +23,11 @@ function swapImageI() {
     const myImgI = document.getElementById('i');
     if (myImgI.src.match("img/i.png")) {
         myImgI.src = "img/iii.png";
-        document.getElementById('jentendsi').play()
+        document.getElementById('jentendsile').play()
     } else if (myImgI.src.match("img/iii.png")) {
-        myImgI.src = "img/lit.png";
-        document.getElementById('jentendslit').play()
-    } else  if (myImgI.src.match("img/lit.png")){
+        myImgI.src = "img/ilestylo.png";
+        document.getElementById('jentendsile').play()
+    } else  if (myImgI.src.match("img/ilestylo.png")){
         myImgI.src = "img/i.png";
         document.getElementById('jentendsi').play()
     }

@@ -8,9 +8,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/p1.css">
+    <link rel="stylesheet" href="style/letters.css">
 </head>
 <body>
+    <header>
+        <img class = "icon" src="img/audio.png" alt="HP icon" onclick="playTitre();">
+        <a href="./index.html"><span>Homework - First Grade French - Period 1</span></a>
+    </header>
+
+    <div class = "grid-container">
+        <div class="grid-item-first">
+            <img class="alpha" id="consigne"src="img/consigne.png" onclick="playConsigne();">
+        </div>
+        
+        <div class="grid-item"> 
+            <img class="alpha" id="a"src="img/a.png" onclick="swapImageA();">
+        </div>
+        
+        <div class="grid-item">
+            <img class="alpha" id="ane"src="img/ane.png" onclick="playAne();">
+        </div>
+       
+        <div class="grid-item">
+            <img class="alpha" id="abricot"src="img/abricot.png" onclick="playAbricot();">
+        </div>
+       
+        <div class="grid-item">
+            <img class="alpha" id="chat"src="img/chat.png" onclick="playChat();">
+        </div>
+
+        <div class="grid-item">
+            <img class="alpha" id="chocolat"src="img/chocolat.png" onclick="playChocolat();">
+        </div>
     
+        <div class="grid-item">
+            <img class="alpha" id="canape"src="img/canape.png" onclick="plaCanape();">
+        </div>
+        
+        <div class="grid-item">
+            <img class="alpha" id="radeau"src="img/radeau.png" onclick="playRadeau();">
+        </div>
+    </div>
+
+
+    
+    
+
+
+    <audio id="titre">
+        <source type="audio/mp3" id="titre_mp3" src="sons/titre.mp3">
+    </audio>
+    
+    
+        <audio id="jentendsa">
+            <source type="audio/mp3" id="jentendsa_mp3" src="sons/jentends_a.mp3">
+        </audio>
+        <audio id="jentendsrat">
+            <source type="audio/mp3" id="jentendsrat_mp3" src="sons/jentends_rat.mp3">
+        </audio>
+        <script src="js/p1.js"></script>
 </body>
 </html>
