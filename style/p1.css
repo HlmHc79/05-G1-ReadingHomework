@@ -9,9 +9,7 @@
 }
   
 header {
-    
     height:15vh;
-    border-bottom: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +28,9 @@ main {
     display: grid;
     padding:3px;
     gap: 10px;
-    grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: repeat(3, 30vh);
+    grid-template-columns: repeat(3, 32vw);
+    grid-template-rows: repeat(4, 30vh);
+    justify-content: space-evenly;
   }
 
   .grid-item {
@@ -40,8 +39,18 @@ main {
     text-align: center;
   }
 
+  .gris {
+    background-image: url('/img/hachure.png');
+    background-color: rgba(1, 1, 1, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* chercher comment changer l'ordre des images pour que le hachurages passe au-dessus */
+  }
+
+
  .alpha{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     }
