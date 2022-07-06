@@ -1,9 +1,3 @@
-document.getElementById('titre').onclick = playTitre
-
-function playTitre() {
-    document.getElementById('titre').play()
-  }
- 
  function swapImageA() {
     const myImgA = document.getElementById('a');
     if (myImgA.src.match("img/a.png")) {
@@ -15,7 +9,6 @@ function playTitre() {
 
     } else  if (myImgA.src.match("img/avion.png")){
         myImgA.src = "img/a.png";
-        document.getElementById('jentendsa').play()
     }
 }
 

@@ -12,60 +12,80 @@
 </head>
 <body>
     <header>
-        <img class = "icon" src="img/audio.png" alt="HP icon" onclick="playTitre();">
-        <a href="./index.html"><span>Homework - First Grade French - Period 1</span></a>
+        <div class="wrap">
+        <div class="son"><img class = "icon" src="img/audio.png" alt="HP icon" onclick="document.getElementById('titre').play()"></div>
+        <div class="text"><a href="./index.html">
+        <span class = "title">Homework - First Grade French - Period 1</span></a></div>
+        <!-- <div class="image"><img class="banner" id="a" src="img/a.png" onclick="swapImageA();"></div> -->
+    </div>
+</div>
     </header>
 
     <div class = "grid-container">
+        
         <div class="grid-item-first">
-            <img class="alpha" id="consigne"src="img/consigne.png" onclick="playConsigne();">
-        </div>
-        
-        <div class="grid-item"> 
-            <img class="alpha" id="a"src="img/a.png" onclick="swapImageA();">
-        </div>
-        
+            <span class = "consigne" onclick="document.getElementById('titre').play()"> Lis puis clique et écoute</span>
+            <img class="first"  src="img/reading.png" onclick="document.getElementById('titre').play()">
+        </div>  
         <div class="grid-item">
-            <img class="alpha" id="ane"src="img/ane.png" onclick="playAne();">
+            <img class="alpha" id="a" src="img/a.png" onclick="swapImageA();">
+        </div>   
+        <div class="grid-item">
+            <img class="alpha" src="img/ane.png" onclick="document.getElementById('ane').play()">
         </div>
        
         <div class="grid-item">
-            <img class="alpha" id="abricot"src="img/abricot.png" onclick="playAbricot();">
+            <img class="alpha" src="img/abricot.png" onclick="document.getElementById('abricot').play()">
         </div>
        
         <div class="grid-item">
-            <img class="alpha" id="chat"src="img/chat.png" onclick="playChat();">
+            <img class="alpha" src="img/chat.png" onclick="document.getElementById('chat').play()">
         </div>
 
         <div class="grid-item">
-            <img class="alpha" id="chocolat"src="img/chocolat.png" onclick="playChocolat();">
+            <img class="alpha" src="img/chocolat.png" onclick="document.getElementById('chocolat).play()">
         </div>
     
         <div class="grid-item">
-            <img class="alpha" id="canape"src="img/canape.png" onclick="plaCanape();">
+            <img class="alpha" src="img/canape.png" onclick="document.getElementById('canape').play()">
         </div>
         
         <div class="grid-item">
-            <img class="alpha" id="radeau"src="img/radeau.png" onclick="playRadeau();">
+            <img class="alpha" src="img/radeau.png" onclick="document.getElementById('radeau').play()">
         </div>
     </div>
 
 
     
     
-
-
     <audio id="titre">
-        <source type="audio/mp3" id="titre_mp3" src="sons/titre.mp3">
+        <source type="audio/mp3" src="/sons/Consigne.m4a">
+    </audio>
+
+    <audio id="ane">
+        <source type="audio/mp3" src="/sons/Âne.m4a">
+    </audio>
+
+    <audio id="abricot">
+        <source type="audio/mp3" src="/sons/Abricot.m4a">
+    </audio>
+
+    <audio id="chat">
+        <source type="audio/mp3" src="/sons/Chat.m4a">
+    </audio>
+
+    <audio id="chocolat">
+        <source type="audio/mp3" src="/sons/Chocolat.m4a">
     </audio>
     
-    
-        <audio id="jentendsa">
-            <source type="audio/mp3" id="jentendsa_mp3" src="sons/jentends_a.mp3">
-        </audio>
-        <audio id="jentendsrat">
-            <source type="audio/mp3" id="jentendsrat_mp3" src="sons/jentends_rat.mp3">
-        </audio>
+    <audio id="canape">
+        <source type="audio/mp3" src="/sons/Canapé.m4a">
+    </audio>
+
+    <audio id="radeau">
+        <source type="audio/mp3" src="/sons/Radeau.m4a">
+    </audio>
+
         <script src="js/p1.js"></script>
 </body>
 </html>

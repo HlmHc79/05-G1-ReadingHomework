@@ -1,6 +1,8 @@
 * {
     margin:0;
     padding:0;
+    font-family:'Lexend Giga', sans-serif;
+    font-size: 16px;
 }
 
 a {
@@ -9,19 +11,62 @@ a {
 }
 
 .icon {
-    width:25px;
+    width:55px;
     padding-right: 15px;
 }
   
 header {
-    height:15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+    height:25vh;
     font-family:'Lexend Giga', sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }  
+
+.title {
+  font-size: 1.8rem;
+}
+
+.consigne{
+  font-size: 1.3rem;
+}
+
+.wrap {
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.son {
+  display: flex;
+  align-items: center;
+  width:15vw;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  width:65vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  width:20vw;
+  height:25vh;
+  justify-content: center;
+}
+
+.banner {
+  width:90%;
+  max-height:100%;
+  max-width:250px;
+  padding-right:10px;
+}
 
 main {
     display: flex;
@@ -45,6 +90,9 @@ main {
   }
 
   .grid-item-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     grid-column-start: 1;
     grid-column-end: 3;
     border: 1px solid black;
@@ -63,3 +111,9 @@ main {
     height: 100%;
     object-fit: contain;
     }
+
+    .first{
+      height: 100%;
+      object-fit: contain;
+      }
+  
