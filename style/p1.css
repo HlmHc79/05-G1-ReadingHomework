@@ -38,6 +38,7 @@ main {
 }
 
 .grid-container {
+  margin-top:10px;
     display: grid;
     padding:3px;
     gap: 10px;
@@ -47,13 +48,7 @@ main {
   }
 
   .grid-item {
-    border: 1px solid black;
-    font-size: 30px;
-    text-align: center;
-    border-right:solid 10px #8D301E;
-    border-bottom:solid 10px #8D301E;
-    border-left:solid 10px #8D301E;
-    border-top:solid 10px #8D301E;
+    border:solid 5px #8D301E;
   }
   
   .gris {

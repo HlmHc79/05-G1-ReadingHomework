@@ -22,10 +22,17 @@ header {
     font-family:'Lexend Giga', sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
+    background-image: url('/img/banner1.jpeg');
+    background-color: rgba(1, 1, 1, 0.3);
+    background-blend-mode: multiply;
+    background-position:center;
+    background-size:cover;
+    height:30vh;
 }  
 
 .title {
   font-size: 1.8rem;
+  color:white;
 }
 
 .consigne{
@@ -75,6 +82,8 @@ main {
 }
 
 .grid-container {
+  margin-top:10px;
+  background-color: whitesmoke;
     display: grid;
     padding:3px;
     gap: 10px;
@@ -84,9 +93,7 @@ main {
   }
 
   .grid-item {
-    border: 1px solid black;
-    font-size: 30px;
-    text-align: center;
+    border:solid 5px #8D301E;
   }
 
   .grid-item-first {
@@ -98,13 +105,12 @@ main {
     border: 1px solid black;
     font-size: 30px;
     text-align: center;
+    border:solid 5px #8D301E;
   }
-
 
   .gris {
     opacity: 0.2;
   }
-
 
  .alpha{
     width: 100%;
