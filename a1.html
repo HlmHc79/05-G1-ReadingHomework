@@ -8,44 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/lettersA.css">
+    <link rel="stylesheet" href="style/letters.css">
 </head>
 <body>
     <header>
-    <div class="wrap">
-        <div class="son">
-            <img class = "icon" src="img/audioW.png" alt="HP icon" onclick="document.getElementById('titre').play()">
-        </div>
-        <div class="text"><a href="./index.html">
-            <span class = "title">Homework - First Grade French - Period 1</span></a>
-        </div>
-    </div>
+        <div class="wrap">
+        <div class="son"><img class = "icon" src="img/audioW.png" alt="HP icon" onclick="document.getElementById('titre').play()"></div>
+        <div class="text"><a href="./a.html">
+        <span class = "title">Homework - First Grade French - Period 1</span></a></div>
+   </div>
+</div>
     </header>
 
     <div class = "grid-container">
-        <a href="./a1.html">
+        
         <div class="grid-item-first">
             <span class = "consigne" onclick="document.getElementById('titre').play()"> Lis puis clique et écoute</span>
             <img class="first"  src="img/reading2.png" onclick="document.getElementById('titre').play()">
         </div>  
-        </a>
+        <div class="grid-item">
+            <img class="alpha" id="a" src="img/a1.png" onclick="swapImageA();">
+        </div>   
+        <div class="grid-item">
+            <img class="alpha" src="img/ane1.png" onclick="document.getElementById('ane').play()">
+        </div>
+       
+        <div class="grid-item">
+            <img class="alpha" src="img/abricot1.png" onclick="document.getElementById('abricot').play()">
+        </div>
+       
+        <div class="grid-item">
+            <img class="alpha" src="img/chat1.png" onclick="document.getElementById('chat').play()">
+        </div>
 
-        <a href="./a2.html">
-        <div class="grid-item-first">
-            <span class = "consigne" onclick="document.getElementById('tri').play()"> Trie les images</span>
-            <img class="first"  src="img/trier2.png" onclick="document.getElementById('tri').play()">
-        </div>  
-        </a>
+        <div class="grid-item">
+            <img class="alpha" src="img/chocolat1.png" onclick="document.getElementById('chocolat).play()">
+        </div>
+    
+        <div class="grid-item">
+            <img class="alpha" src="img/canape1.png" onclick="document.getElementById('canape').play()">
+        </div>
+        
+        <div class="grid-item">
+            <img class="alpha" src="img/radeau1.png" onclick="document.getElementById('radeau').play()">
+        </div>
     </div>
 
 
     
     
     <audio id="titre">
-        <source type="audio/mp3" src="/sons/Consigne.m4a">
-    </audio>
-
-    <audio id="tri">
         <source type="audio/mp3" src="/sons/Consigne.m4a">
     </audio>
 

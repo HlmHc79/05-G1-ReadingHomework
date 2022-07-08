@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le son A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/lettersTri.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+        <div class="son"><img class = "icon" src="img/audioW.png" alt="HP icon" onclick="document.getElementById('titre').play()"></div>
+        <div class="text"><a href="./a.html">
+        <span class = "title">Homework - First Grade French - Period 1</span></a></div>
+   </div>
+</div>
+    </header>
+<body>
+    <div class = "grid-container">
+        
+        <div class="grid-item-first">
+            <span class = "consigne" onclick="document.getElementById('titre').play()">Trie les images</span>
+            <img class="first"  src="img/trier2.png" onclick="document.getElementById('titre').play()">
+        </div>  
+        <div class="grid-item-second">
+            <img class="alpha" id="a" src="img/a1.png" onclick="swapImageA();">
+        </div>   
+        <div id = "drag1" draggable="true"  class="grid-item" ondragstart="onDragStart(event);">
+            <img class="alpha" src="img/ane1.png" onclick="document.getElementById('ane').play()">
+        </div>
+       
+        <div class="grid-item">
+            <img id = "drag2" draggable="true" class="alpha" src="img/abricot1.png" onclick="document.getElementById('abricot').play()">
+        </div>
+       
+        <div class="grid-item">
+            <img id = "drag3" draggable="true" class="alpha" src="img/chat1.png" onclick="document.getElementById('chat').play()">
+        </div>
+
+        <div class="grid-item">
+            <img id = "drag4" draggable="true" class="alpha" src="img/chocolat1.png" onclick="document.getElementById('chocolat).play()">
+        </div>
+    
+        <div class="grid-item">
+            <img id = "drag5" draggable="true" class="alpha" src="img/canape1.png" onclick="document.getElementById('canape').play()">
+        </div>
+        
+        <div class="grid-item">
+            <img id = "drag6" draggable="true" class="alpha" src="img/radeau1.png" onclick="document.getElementById('radeau').play()">
+        </div>
+
+        <div class="grid-item">
+            <img id = "drag7" draggable="true" class="alpha" src="img/chat1.png" onclick="document.getElementById('chat').play()">
+        </div>
+
+        <div class="grid-item">
+            <img id = "drag8" draggable="true" class="alpha" src="img/chocolat1.png" onclick="document.getElementById('chocolat).play()">
+        </div>
+    
+        <div class="grid-item">
+            <img id = "drag9" draggable="true" class="alpha" src="img/canape1.png" onclick="document.getElementById('canape').play()">
+        </div>
+        
+        <div class="grid-item">
+            <img id = "drag10" draggable="true" class="alpha" src="img/radeau1.png" onclick="document.getElementById('radeau').play()">
+        </div>
+
+        <div ondragover="onDragOver(event);" ondrop="onDrop(event);" class="grid-item-dropzone">
+          J'entends A
+        </div>
+        <div class="grid-item-dropzone2">
+            Je n'entends pas A
+          </div>
+      </div>
+    </div>
+    
+
+    <script src="tri.js"></script>
+</body>
+</html>
