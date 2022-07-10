@@ -30,7 +30,7 @@ header {
 }  
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color:white;
 }
 
@@ -39,25 +39,24 @@ header {
 }
 
 .wrap {
+  width: 80%;
   padding:10px;
   display: flex;
-  max-width:80%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .son {
   display: flex;
   align-items: center;
-  width:15vw;
+  width:20vw;
   justify-content: center;
 }
 
 .text {
   display: flex;
   align-items: center;
+  max-width:600px;
   width:65vw;
-  max-width:500px;
-  justify-content: center;
   text-align: center;
 }
 
